@@ -1,3 +1,6 @@
+html{
+	
+}
 /* calendar icon */
 input[type="date"]:hover::-webkit-calendar-picker-indicator {
   color: #3a5a5f;
@@ -14,7 +17,7 @@ input[type="date"]:after {
    color: #a0a0a0;
 }
 
-/* element styles */
+/* ELEMENT STYLES */
 body{
     margin:0px;
 	font-family: Sans-Serif;
@@ -60,6 +63,7 @@ hr{
 	background:lightgrey;
 }
 
+/* GLOBAL STYLES */
 .float-right{
 	float:right;
 }
@@ -75,6 +79,7 @@ hr{
 	position:absolute;
 	width:80%;
 	padding:0% 10%;
+	min-width:400px;
 }
 
 /* HEADER */
@@ -170,7 +175,6 @@ table#line-items-table th{
 table#line-items-table td{
     padding:5px 15px;
 	text-align:left;
-	min-width:85px;
 }
 /* these selectors center the last 2 columns of text in the table */
 table#line-items-table th:nth-child(4), table#line-items-table td:nth-child(3), table#line-items-table td:nth-child(3) input, table#line-items-table td:nth-child(4){
