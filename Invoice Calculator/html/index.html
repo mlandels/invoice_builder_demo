@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Invoice Builder</title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<link rel="stylesheet" type="text/css" href="../css/media_queries.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+		<script src="../js/events.js" type="text/javascript"></script>
+	</head>
+
+	<body>	
+		<div class="fixed-header header-wrapper">
+			<h1>Invoice Builder</h1>
+		</div>
+		<div class="body-wrapper">
+		<div class="header-spacing"></div>
+
+		<!-- Left Column Region -->
+	        <div class="column left-column">
+
+		        <div class="content-region">
+		            <div id="logo" class="float-left">
+						<img src="../img/logo.png" alt="Company Logo">
+		            </div>
+		            <div id="invoice-number" class="float-right">
+		            	<h2>Invoice</h2>
+		            	<input type="text" placeholder="Invoice Number">
+		            </div>
+		        </div>
+
+		        <div class="content-region">
+			        <div id="datepicker-wrapper" class="float-right">
+			            <label for="datepicker">Due Date</label>
+	   	        	    <input type="date" name="Due Date" id="datepicker"><br>
+			        </div>
+		            <div id="billing-wrapper" class="float-left">
+			            <label for="billing-input">Bill To</label>
+			            <textarea id="billing-input" placeholder="Who is this invoice to?"></textarea>
+			        </div>
+	       		</div>
+
+	       		<div class="content-region">
+	       			<table id="line-items-table">
+	       				<thead>
+		       				<tr>
+		       					<th class="long-item">Item</th>
+		       					<th>Quantity</th>
+		       					<th>Price</th>
+		       					<th>Total</th>
+		       				</tr>
+	       				</thead>
+	       				<tbody>
+	       					<tr>
+		       					<td class="long-item"><input type="text" class="row-item" placeholder="Who is this invoice to?"></td>
+		       					<td><input type="number" class="row-quantity"></td>
+		       					<td><input type="currency" class="row-price" value="$0"></td>
+		       					<td><p class="row-total">$0</p></td>
+		       				</tr>
+	       				</tbody>
+	       			</table>
+	       			<button type="button" id="add-line-item"><i class="fa fa-plus"></i> Line Item</button>
+	       			<table id="line-item-totals" class="float-right">
+	       				<tbody>
+	       					<tr>
+	       						<td>Subtotal</td>
+	       						<td>$0</td>
+	       					</tr>
+	       					<tr>
+	       						<td>Tax(5%)</td>
+	       						<td>$0</td>
+	       					</tr>
+	       					<tr>
+	       						<td colspan="2"><hr/></td>
+	       					</tr>	
+	       					<tr>
+	       						<td>Grand Total</td>
+	       						<td>$0</td>
+	       					</tr>	
+	       				</tbody>	       				
+	       			</table>
+	       		</div>
+	        
+	       		<div class="content-region">
+	       			<label for="notes">Notes</label>
+	       			<textarea id="notes" placeholder="Notes - any relevant information not already covered"></textarea>
+	       		</div>
+	        </div>
+
+	        <!-- Right Column Region -->
+	        <div class="column right-column">
+	        	<div class="content-region">
+					<button type="button" id="send-invoice">Send Invoice</button>
+					<div id="currency">
+						<p>Currency: <strong>USD</strong></p>
+		        	</div>
+		        	<hr/>
+		        </div>
+	        </div>
+
+	    </div>
+
+	</body>
+</html>

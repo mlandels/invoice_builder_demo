@@ -1,0 +1,36 @@
+@media only screen and (max-width: 961px) {
+	.header-spacing{
+		height:100px;
+	}
+	div#logo img{
+		max-width:200px;
+	}
+	.left-column, .right-column {
+		width:92%;
+	}
+	.body-padding{
+		padding:0% 5%;
+	}
+	div#billing-wrapper{
+		width:100%;
+		margin-bottom:50px;
+	}
+	input{
+		width:100%;
+	}
+	div#datepicker-wrapper{
+		width:100%;
+		margin-bottom:20px;
+	}
+	table#line-item-totals{
+		width: 75%;
+		margin-top:25px;
+	}  
+	table#line-items-table th, table#line-items-table td{
+		min-width:0px;
+		max-width:175px;
+		text-overflow: ellipsis;
+    	overflow: hidden;	
+	}
+
+}
