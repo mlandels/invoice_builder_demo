@@ -1,6 +1,3 @@
-html{
-	
-}
 /* calendar icon */
 input[type="date"]:hover::-webkit-calendar-picker-indicator {
   color: #3a5a5f;
